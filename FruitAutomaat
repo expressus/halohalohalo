@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Fruitautomaat
+{
+    class Fruitautomaat
+    {
+        internal List<Fruit> fruitDispenser { get; set; }
+        internal Fruitautomaat()
+        {
+            fruitDispenser = new List<Fruit>();
+        }
+        internal Fruit WypelnijAutomat(Apple apples, Pear pears, Int32 aantal)
+        {
+            Fruit fruit = new Fruit(apples, pears, 9);
+            fruitDispenser.Add(fruit);
+            return fruit;
+        }
+    }
+}
